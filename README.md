@@ -1,11 +1,13 @@
-# Install
+# flatten-twitterv2
+
+## Install
 
 ```
 npm install flatten-twitterv2
 ```
-`Important:` It uses optional chaining so Node version 14+ is required or you might be able to use babel on an older version.
+`Important:` It uses optional chaining so Node version 14+ is required or you might be able to use on an older version with some finagling. 
 
-# Use
+## Use
 
 ```js
 import { flatten } from 'flatten-twitterv2'
@@ -19,7 +21,7 @@ async function() {
 ```
 
 
-# Why?
+## Why?
 
 Twitter's v2 API has an `includes` object when you add [expansions](https://developer.twitter.com/en/docs/twitter-api/expansions). This is a function to inline your expansions so that it's easier to work with the resulting data.
 
