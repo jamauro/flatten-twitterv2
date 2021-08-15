@@ -21,4 +21,46 @@ async function() {
 
 # Why?
 
-Twitter's v2 API has an `includes` object when you add expansions. This is a function to inline your expansions so that it's easier to work with the resulting data.
+Twitter's v2 API has an `includes` object when you add [expansions](https://developer.twitter.com/en/docs/twitter-api/expansions). This is a function to inline your expansions so that it's easier to work with the resulting data.
+
+If you're searching for tweets for example, this is what it looks like:
+
+**Before**
+```json
+{
+  "data": [
+    {
+      "id": "21",
+      "text": "just setting up my twttr",
+      "author_id": "12"
+    }
+  ],
+  "includes": {
+    "users": [
+      {
+        "id": "123",
+        "username": "jack",
+        "created_at": "2006-03-21T20:50:14.000Z"
+      }
+    ]
+  }
+}
+```
+
+**After**
+```json
+{
+  "data": [
+    {
+      "id": "21",
+      "text": "just setting up my twttr",
+      "author_id": "12",
+      "author": {
+        "id": "12",
+        "username": "jack",
+        "created_at": "2006-03-21T20:50:14.000Z",
+      }
+    }
+  ]
+}
+```
