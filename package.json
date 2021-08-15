@@ -9,5 +9,6 @@
   "keywords": [],
   "author": "John Mauro <jamauro@gmail.com>",
   "license": "ISC",
+  "repository": "github:jamauro/flatten-twitterv2",
   "type": "module"
 }

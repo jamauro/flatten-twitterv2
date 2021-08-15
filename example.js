@@ -1,5 +1,6 @@
 import { flatten } from './index.js';
 
+// this is an example response from the Twitter v2 API. It's long, so scroll to the bottom... :)
 const response = {
   "data": [
     {
@@ -16892,4 +16893,5 @@ const response = {
   }
 }
 
+// once you have the response, you can call flatten on it
 console.log('tweets', flatten(response));
