@@ -3,7 +3,7 @@
 ```
 npm install flatten-twitterv2
 ```
-`Important` It uses optional chaining so Node version 14+ is required or you might be able to use babel on an older version.
+`Important:` It uses optional chaining so Node version 14+ is required or you might be able to use babel on an older version.
 
 # Use
 
