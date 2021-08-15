@@ -1,4 +1,4 @@
-import { flatten } from './index.js';
+import { flatten } from 'flatten-twitterv2';
 
 // this is an example response from the Twitter v2 API. It's long, so scroll to the bottom... :)
 const response = {
